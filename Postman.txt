@@ -1,0 +1,119 @@
+GET localhost:8080/patient/list
+
+[
+    {
+        "patient_id": 1,
+        "patient_name": "Ravina",
+	"patient_gender": "Female",
+        "patient_age": 21,
+        "patient_bloodgroup":"O+ve"
+	"patient_address": "Chalisgaon"
+    },
+    {
+        "patient_id": 2,
+        "patient_name": "Yash",
+        "patient_gender": "male",
+	"patient_age": 21,
+        "patient_bloodgroup":"O+ve"
+        "patient_address": "Pune"
+    }
+]
+----------------------------------------------------------------------------------------
+GET localhost:8080/patient/findbyid/1
+
+ {
+        "patient_id": 1,
+        "patient_name": "Ravina",
+	"patient_gender": "Female",
+        "patient_age": 21,
+        "patient_bloodgroup":"O+ve"
+	"patient_address": "Chalisgaon"
+    }
+------------------------------------------------------------------------------------------
+POST localhost:8080/patient/save
+
+{
+        
+        "patient_id": 3,
+        "patient_name": "Kalyani",
+	"patient_gender": "Female",
+        "patient_age": 17,
+        "patient_bloodgroup":"O+ve"
+	"patient_address": "Jalgaon"
+    }
+--------------------------------------------------------------------------------------
+PUT localhost:8080/patient/update
+
+{
+        "patient_id": 1,
+        "patient_name": "Ravina",
+	"patient_gender": "Female",
+        "patient_age": 21,
+        "patient_bloodgroup":"O+ve"
+	"patient_address": "Pune"
+    }
+--------------------------------------------------------------------------------------
+DELETE localhost:8080/patient/delete/1
+
+patient_id1
+
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+GET localhost:8080/doctor/list
+
+[
+    {
+        "dr_id": 1,
+        "dr_name": "Tanu",
+        "dr_contact": 98238,
+        "dr_address": "Saygaon",
+        
+    },
+    {
+        "dr_id": 2,
+        "dr_name": "Harry",
+        "dr_contact": 976228,
+        "dr_address": "Saswad"
+    }
+]
+-------------------------------------------------------------------------------------------------
+GET localhost:8080/doctor/findbyid/1
+
+{
+	"dr_id": 1,
+        "dr_name": "Tanu",
+        "dr_contact": 98238,
+        "dr_address": "Saygaon"
+    }
+------------------------------------------------------------------------------------------------
+POST localhost:8080/doctor/save
+
+{
+        "dr_id": 3,
+        "dr_name": "Dhananjay",
+        "dr_contact": 98765,
+        "dr_address": "Nashik"
+    }
+-----------------------------------------------------------------------------------------------
+PUT localhost:8080/doctor/update
+
+{
+        "dr_id": 1,
+        "dr_name": "Prakash",
+        "dr_contact": 98238,
+        "dr_address": "Saygaon"
+    }
+-----------------------------------------------------------------------------------------------------
+DELETE localhost:8080/doctor/delete/3
+
+doctor_id3
+
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+***************************************Command Line********************************************
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+
+
